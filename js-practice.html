@@ -68,8 +68,36 @@
     let try04 = makeName('My', 'Whole', 'Name');
     console.log(try04);
 
-    
+    // Make a name with middle initial
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length === 1) {
+middleName = middleName + ".";
+let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName; 
+  } else {
+    // modifications here
+    let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+  }
+}
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+console.log(makeBetterName("John", "F", "Kennedy"));
 
+
+//Function on my own
+function gameResult(homeScore, awayScore) {
+if (homeScore > awayScore) {
+  return 'The home team won';
+} else if (homeScore === awayScore) {
+  return 'They tied';
+} else {
+  return 'The home away team won';
+} 
+}
+
+console.log(gameResult (5, 2));
+console.log(gameResult(5,5));
+console.log(gameResult(2,3));
 
 
 
